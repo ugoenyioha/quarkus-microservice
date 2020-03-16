@@ -3,7 +3,7 @@ node {
 		checkout scm
 	}
 	stage('Build Project') {
-      sh './mvnw -e clean package'
+      sh './mvnw -e -X clean package'
 	}
 	stage('Build Container') {
 		docker.build('${JOB_NAME}', '-f src/main/docker/Dockerfile.jvm .')
