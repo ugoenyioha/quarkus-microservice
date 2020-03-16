@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <quarkus.version>1.1.1.Final</quarkus.version>
-        <surefire-plugin.version>2.22.1</surefire-plugin.version>
+<!--         <surefire-plugin.version>2.22.1</surefire-plugin.version> -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -49,7 +49,7 @@
     </dependencies>
     <build>
         <plugins>
-            <plugin>
+<!--             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire-plugin.version}</version>
                 <configuration>
@@ -59,7 +59,7 @@
                         </java.util.logging.manager>
                     </systemProperties>
                 </configuration>
-            </plugin>
+            </plugin> -->
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-maven-plugin</artifactId>
@@ -100,7 +100,7 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
+<!--                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-failsafe-plugin</artifactId>
                         <version>${surefire-plugin.version}</version>
@@ -119,7 +119,7 @@
                                 </configuration>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin> -->
                 </plugins>
             </build>
         </profile>
