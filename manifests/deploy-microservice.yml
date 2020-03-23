@@ -21,7 +21,7 @@ spec:
         spec:
             containers:
                 -   image: 951980950913.dkr.ecr.us-west-2.amazonaws.com/teama-microservice
-                    name: teama-microservice
+                    name: teama-microservice 
                     ports:
                         -   name: web
                             containerPort: 8080
