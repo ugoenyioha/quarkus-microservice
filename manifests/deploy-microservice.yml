@@ -20,7 +20,7 @@ spec:
                 source: demo
         spec:
             containers:
-                -   image: 219099013464.dkr.ecr.us-west-2.amazonaws.com/teama-microservice
+                -   image: 951980950913.dkr.ecr.us-west-2.amazonaws.com/teama-microservice
                     name: teama-microservice
                     ports:
                         -   name: web
